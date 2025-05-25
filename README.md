@@ -16,106 +16,43 @@ Write the Windows commands / batch file . Save each script in a file with a .bat
 ### Step 3:
 
 Execute the necessary commands/batch file for the desired output. 
-
-
-
-
 # WINDOWS COMMANDS:
 ## Exercise 1: Basic Directory and File Operations
-Create a directory named "my-folder"
+Create a directory named "MyLab" on the desktop.
+## COMMAND AND OUTPUT
+mkdir %userprofile%\Desktop\MyLab 
+![Screenshot 2025-05-25 191740](https://github.com/user-attachments/assets/2a648c37-e816-48a4-8b11-cc60f4b0ed4e)
+## COMMAND AND OUTPUT
+cd %userprofile%\Desktop\MyLab 
+![Screenshot 2025-05-25 191834](https://github.com/user-attachments/assets/245dc39f-1b95-4b52-ac1a-07cb05430aff)
+type nul > MyFile.txt 
+![Screenshot 2025-05-25 191904](https://github.com/user-attachments/assets/f8ad646f-56ce-4bf4-bfba-15624cfd17cf)
+List the contents of the "MyLab" directory.
+## COMMAND AND OUTPUT
+dir %userprofile%\Desktop\MyLab 
+![Screenshot 2025-05-25 191557](https://github.com/user-attachments/assets/67b23934-2874-4a61-80e6-32ba4bcb6f8f)
+Copy "MyFile.txt" to a new folder named "Backup" on the desktop
+## COMMAND AND OUTPUT
+mkdir %userprofile%\Desktop\Backup 
+![Screenshot 2025-05-25 191414](https://github.com/user-attachments/assets/922713ce-707d-43a8-b661-f4e428b6da72)
+copy MyFile.txt %userprofile%\Desktop\Backup 
+![Screenshot 2025-05-25 191451](https://github.com/user-attachments/assets/ca354579-0c10-473b-ab57-1c864f61fcd1)
+Move the "MyLab" directory to the "Documents" folder.
 
 ## COMMAND AND OUTPUT
-
-Remove the directory "my-folder"
-
-## COMMAND AND OUTPUT
-
-
-Create the file Rose.txt
-
-## COMMAND AND OUTPUT
-
-
-Create the file hello.txt using echo and redirection
-
-## COMMAND AND OUTPUT
-
-Copy the file hello.txt into the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-Remove the file hello1.txt
-
-## COMMAND AND OUTPUT
-
-List out the file hello1.txt in the current directory
-
-## COMMAND AND OUTPUT
-
-List out all the associated file extensions 
-
-## COMMAND AND OUTPUT
-
-
-Compare the file hello.txt and rose.txt
-
-## COMMAND AND OUTPUT
-
+mkdir %userprofile%\Desktop\Documents
+![Screenshot 2025-05-25 190926](https://github.com/user-attachments/assets/915e2366-505c-4279-8233-8e9b531ac996)
 ## Exercise 2: Advanced Batch Scripting
 Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
-
-
-
-
-
-## OUTPUT
-
-
-
-Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
-Prompt the user to enter a number.
-Calculate the remainder when the number is divided by 2.
-Display whether the number is odd or not.
-Ask the user if they want to check another number.
-Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
-Handle invalid inputs for the continuation prompt (Y/N) gracefully.
-
-
+```
+mkdir %userprofile%\Desktop\DocBackup
+copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+echo Backup completed successfully!
+```
 
 ## OUTPUT
+![Screenshot 2025-05-25 190656](https://github.com/user-attachments/assets/83b7a5b6-7b86-47cc-880f-2905b94967fb)
 
-
-
-
-Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
-
-
-
-
-## OUTPUT
-
-
-
-
-Write a batch script to check whether a file named sample.txt exists in the current directory. If the file exists, display the message sample.txt exists. Otherwise, display sample.txt does not exist. Pause the script at the end to view the result.
-
-Instructions:
-Use the IF EXIST conditional statement.
-Make sure the script works for files located in the same directory as the batch file.
-Use pause to keep the command window open after displaying the message.
-Expected Output (if the file exists):
-
-## OUTPUT
-
-
-Write a batch script that displays a simple menu with three options:
-Say Hello – Displays the message Hello, World!
-Create a File – Creates a file named newfile.txt with the content This is a new file
-Exit – Exits the script with a goodbye message
-The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
-
-
-## OUTPUT
 
 
 

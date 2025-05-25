@@ -43,7 +43,7 @@ Move the "MyLab" directory to the "Documents" folder.
 mkdir %userprofile%\Desktop\Documents
 ![Screenshot 2025-05-25 190926](https://github.com/user-attachments/assets/915e2366-505c-4279-8233-8e9b531ac996)
 ## Exercise 2: Advanced Batch Scripting
-Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
+Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 ```
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
@@ -52,9 +52,6 @@ echo Backup completed successfully!
 
 ## OUTPUT
 ![Screenshot 2025-05-25 190656](https://github.com/user-attachments/assets/83b7a5b6-7b86-47cc-880f-2905b94967fb)
-
-
-
 
 # RESULT:
 The commands/batch files are executed successfully.
